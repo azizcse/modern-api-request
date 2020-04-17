@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
                 val content = it.body()
                 Log.e(TAG, "Content - 2 : ${content?.content?.size}")
             }
-
         })
 
         viewModel.contentLiveData2.observe(this, Observer {
